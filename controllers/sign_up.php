@@ -13,7 +13,7 @@ if ($login!==name || $password!==pass){
 
 
 if ($_POST["login"] || $_POST["password"]) {
-	redirect('localhost',false);
+	redirect('../index.php',false);
 }
 
 $fp=fopen('text.txt','w');

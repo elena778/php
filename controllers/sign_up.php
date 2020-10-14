@@ -9,7 +9,7 @@ if ($login!==name || $password!==pass) print("Wrong login or password");
 
 
 if ($_POST["login"] || $_POST["password"]) {
-	redirect();
+	redirect('localhost',false);
 }
 
 $fp=fopen('text.txt','w');
@@ -22,5 +22,5 @@ function redirect($url, $statusCode=303)
 	header('location:', $url, true, statusCode);
 	die();
 }
-redirect('localhost',false);
+
 ?>

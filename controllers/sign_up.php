@@ -22,4 +22,5 @@ function redirect($url, $statusCode=303)
 	header('location:', $url, true, statusCode);
 	die();
 }
+redirect('localhost',false);
 ?>

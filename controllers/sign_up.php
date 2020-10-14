@@ -8,7 +8,7 @@ if ($login=="" || $password==""){
 
 if ($login!==name || $password!==pass){
  	print("Wrong login or password");
- 	redirect("http://localhost/views/sign_up.php",false)
+	redirect('../index.php',false);
 }
 
 

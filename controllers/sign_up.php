@@ -8,12 +8,12 @@ if ($login=="" || $password==""){
 
 if ($login!==name || $password!==pass){
  	print("Wrong login or password");
-	redirect('../index.php',false);
+	redirect('http://localhost/views/sign_up.php',false);
 }
 
 
 if ($_POST["login"] || $_POST["password"]) {
-	redirect('../index.php',false);
+	redirect('http://localhost',false);
 }
 
 $fp=fopen('text.txt','w');

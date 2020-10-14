@@ -3,12 +3,12 @@ $login=name;
 $password=pass;
 if ($login=="" || $password==""){
 	//print("Empty login or password");
-	redirect("http://localhost/views/sign_up.php",false)
+	redirect("http://localhost/views/sign_up.php",false);
 } 
 
 if ($login!==name || $password!==pass){
  	//print("Wrong login or password");
-	redirect('http://localhost/views/sign_up.php',false);
+	redirect('google.com',false);
 }
 
 
@@ -21,11 +21,10 @@ fwrite($fp,'TEXT');
 fclose($fp);*/
 
 
-function redirect($url, $permanent = false)
+function redirect($url, $statusCode = 303)
 {
-    header('Location: ' . $url, true, $permanent ? 301 : 302);
-
-    exit();
+   header('Location: ' . $url, true, $statusCode);
+   die();
 }
 
 ?>

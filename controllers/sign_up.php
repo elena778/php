@@ -2,12 +2,13 @@
 $login=name;
 $password=pass;
 if ($login=="" || $password==""){
-	print("Wrong login or password");
+	print("Empty login or password");
 } 
 
 if ($login!==name || $password!==pass) print("Wrong login or password");
 
-if ($login==name && $password==pass) {
+
+if ($_POST["login"] || $_POST["password"]) {
 	redirect();
 }
 

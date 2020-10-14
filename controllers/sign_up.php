@@ -23,7 +23,7 @@ fclose($fp);
 
 function redirect($url, $statusCode=303)
 {
-	header('location:', $url, true, statusCode);
+	header('location:'.$url, true, $statusCode);
 	die();
 }
 

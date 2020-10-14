@@ -21,10 +21,11 @@ fwrite($fp,'TEXT');
 fclose($fp);
 
 
-function redirect($url, $statusCode=303)
+function redirect($url, $permanent = false)
 {
-	header('location:' . $url, true, $statusCode);
-	die();
+    header('Location: ' . $url, true, $permanent ? 301 : 302);
+
+    exit();
 }
 
 ?>

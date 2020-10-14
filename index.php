@@ -1,5 +1,5 @@
 <html>
 <body>
-<a href="views/sigh_up.php">Sign up</a>
+<a href="views/sign_up.php">Sign up</a>
 </body>
 </html>
